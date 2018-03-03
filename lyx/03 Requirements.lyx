@@ -1,0 +1,264 @@
+#LyX 2.2 created this file. For more info see http://www.lyx.org/
+\lyxformat 508
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass report
+\use_default_options false
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize 12
+\spacing single
+\use_hyperref false
+\papersize a4paper
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 3.5cm
+\topmargin 3cm
+\rightmargin 3cm
+\bottommargin 2.5cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Chapter
+\begin_inset CommandInset label
+LatexCommand label
+name "cha:Requirements"
+
+\end_inset
+
+Requirement Specification
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+Make sure that the whole chapter is independent of the chosen technology
+ and development platform.
+ The idea is that you illustrate concepts, taxonomies and relationships
+ of the application domain independent of the solution domain!
+\end_layout
+
+\begin_layout Section
+Related Work
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+Try to group works done by others to solve the same problem.
+ For example, to automatically detect lameness in cows, researchers have
+ already tried using vision techniques, pressure sensitive mattresses and
+ attaching sensors to cows.
+ You should make it clear how your work relates to the related work.
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+Example citation in Lyx: 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Bruegge2004software"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section
+Visionary Scenarios
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+Describe 1-2 visionary scenarios here, i.e.
+ a scenario that would perfectly solve your problem, even if it might not
+ be realizable.
+ use our scenario description template in form of a table.
+\end_layout
+
+\begin_layout Section
+Functional Requirements 
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+List and describe all functional requirements of your system.
+ Also mention requirements that you are not going to realize.
+ The short title should be in the form ``verb objective''.
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Category
+\series default
+.
+ Short Description.
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Category
+\series default
+.
+ Short Description.
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Category
+\series default
+.
+ Short Description.
+\end_layout
+
+\begin_layout Section
+Non-Functional Requirements 
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+List and describe all nonfunctional requirements of your system.
+ Also mention requirements that you were not able to realize.
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Category
+\series default
+.
+ Short Description.
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Category
+\series default
+.
+ Short Description.
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Category
+\series default
+.
+ Short Description.
+\end_layout
+
+\begin_layout Section
+Use Case Model
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+This subsection should contain a UML Use Case Diagram including roles and
+ their use cases.
+ If the system is initiating most of the use cases in the background (e.g.
+ tracking user activities), then you can have a Virtual Coach actor initiating
+ the use cases.
+ Give a name to the system other than 'System' and a name to the actor other
+ than 'Actor', such as 'Goalkeeper'.
+\end_layout
+
+\begin_layout Section
+Analysis Object Model
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+This subsection should contain a UML Class Diagram showing the most important
+ objects, attributes, methods and relations of your application domain including
+ taxonomies using specification inheritance.
+ Do not insert objects, attributes or methods of the solution domain.
+ Make sure to describe the analysis object model thoroughly in the text
+ so that readers are able to understand the diagram.
+ Also write about the rationale how and why you modeled the concepts like
+ this.
+\end_layout
+
+\begin_layout Section
+Dynamic Model 
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+This subsection should contain dynamic UML diagrams.
+ These can be a UML state diagrams, UML communication diagrams or UML activity
+ diagrams.
+ Make sure to describe the diagram and its rationale in the text.
+ 
+\backslash
+textbf{Do not use UML sequence diagrams.
+\end_layout
+
+\end_body
+\end_document

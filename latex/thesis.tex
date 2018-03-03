@@ -1,0 +1,263 @@
+\documentclass[a4paper,12pt,twoside]{report}
+
+\usepackage{acronym}
+\usepackage{url}
+\usepackage{cite}
+\usepackage{listings}
+\usepackage[pdftex]{graphicx}
+\usepackage[hang,small,bf]{caption}
+\usepackage{styles/tum}
+\usepackage{setspace}
+\usepackage[german,english]{babel}
+\usepackage{float}
+\usepackage{floatflt}
+\usepackage{fancyhdr}
+\usepackage{color}
+\usepackage{booktabs}
+\usepackage[pdftex,bookmarks=true,plainpages=false,pdfpagelabels=true]{hyperref}
+\usepackage{mdwlist}
+\usepackage{enumerate}
+\usepackage{paralist}
+\usepackage{array}
+\usepackage{longtable}
+\usepackage{listings}
+\usepackage[utf8]{inputenc}
+\usepackage[capitalize, noabbrev]{cleveref}
+
+% Path for graphics
+\graphicspath{{figures/}}
+
+\begin{document}
+\setlength{\evensidemargin}{22pt}
+\setlength{\oddsidemargin}{22pt}
+
+\def\doctype{Master's Thesis}
+\def\faculty{Informatik}
+\def\title{(title english)}		%TODO add title in German
+\def\titleGer{(title german)}	%TODO add title in German
+\def\supervisor{Prof. Bernd Brügge, Ph.D.}
+\def\advisor{Dr. Juan Haladjian}
+\def\author{(author)}			%TODO add author name
+\def\date{(handover date)}		%TODO add submission / handover date
+
+
+\hypersetup{pdfborder={0 0 0},
+                        pdfauthor={<author>},
+                        pdftitle={<title english>},
+                        }
+
+\lstset{showspaces=false, numbers=left, frame=single, basicstyle=\small}
+
+\pagenumbering{alph}
+
+\include{tex/cover}
+\include{tex/titlepage}
+\newpage
+\thispagestyle{empty}
+\mbox{}
+\include{tex/disclaimer}
+
+\newpage
+\thispagestyle{empty}
+\mbox{}
+
+\chapter*{Acknowledgements}
+
+
+\pagenumbering{roman}
+
+\selectlanguage{english}
+\begin{abstract}
+
+%abstract english
+
+\textit{\textbf{1. paragraph:} What is the problem you are solving? Why is it interesting to research this topic (e.g. potential economic impact / potential benefit to a specific user group)}
+
+\textit{\textbf{2. paragraph:} What did you do? How did you tackle the problem? }
+
+\textit{\textbf{3. paragraph:} What results did you get? What benefit does your contribution represent to the proble you mentioned in the 1. paragraph?}
+
+\end{abstract}
+
+\clearpage
+
+\selectlanguage{german}
+\begin{abstract}
+
+%abstract german
+\textit{Note: Insert the German translation of the English abstract here.}
+
+\end{abstract}
+
+\clearpage
+
+\selectlanguage{english}
+
+
+\tableofcontents
+\clearpage
+
+\clearpage
+
+\pagenumbering{arabic}
+
+\fancyhead{}
+\pagestyle{fancy}
+\fancyhead[LE]{\slshape \leftmark}
+\fancyhead[RO]{\slshape \rightmark}
+\headheight=15pt
+
+
+
+
+%------- chapter 1 -------
+
+\chapter{Introduction}
+
+\textit{Note: Introduce the topic of your thesis.}
+
+\section{Problem}
+
+\textit{Note: What problem are you addressing? Justify why is it relevant to solve this problem (e.g. with demographicsal information how many people are affected by it). }
+
+\section{Motivation}
+
+\textit{Note: What are you doing and if not obvious why does it have the potential to solve or help solve the problem mentioned?}
+
+\section{Outline}
+
+\textit{Note: Describe the outline of your thesis}
+
+
+%------- chapter 2 -------
+
+\chapter{Background}
+
+\textit{Note: Describe any technique you might be using later on in your thesis (e.g. wavelet analysis}
+
+%------- chapter 3 -------
+
+\chapter{Related Work}
+
+\textit{Note: Try to group works done by others to solve the same problem. For example, to automatically detect lameness in cows, researchers have already tried using vision techniques, pressure sensitive mattresses and attaching sensors to cows. You should make it clear how your work relates to the related work.}
+
+%------- chapter 4 -------
+
+\chapter{Requirements Analysis}
+
+\textit{Note: Make sure that the whole chapter is independent of the chosen technology and development platform. The idea is that you illustrate concepts, taxonomies and relationships of the application domain independent of the solution domain!}
+
+\subsection{Functional Requirements}
+
+\textit{Note: List and describe all functional requirements of your system. Also mention requirements that you are not going to realize. The short title should be in the form ``verb objective''}
+
+\begin{itemize}
+\item [FR1] \textbf{Short Title}: Short Description.
+\item [FR2] \textbf{Short Title}: Short Description.
+\item [FR3] \textbf{Short Title}: Short Description.
+\end{itemize}
+
+\subsection{Non-Functional Requirements}
+
+\textit{Note: List and describe all nonfunctional requirements of your system. Also mention requirements that you were not able to realize.}
+
+\begin{itemize}
+\item [NFR1] \textbf{Category}: Short Description.
+\item [NFR2] \textbf{Category}: Short Description.
+\item [NFR3] \textbf{Category}: Short Description.
+\end{itemize}
+
+\section{System Models}
+
+\textit{Note: This section includes important system models for the requirements analysis.}
+
+\subsection{Visionary Scenario}
+
+\textit{Note: Describe 1-2 visionary scenarios here, i.e. a scenario that would perfectly solve your problem, even if it might not be realizable. use our scenario description template in form of a table.}
+
+\subsection{Use Case Model}
+
+\textit{Note: This subsection should contain a UML Use Case Diagram including roles and their use cases. If the system is initiating most of the use cases in the background (e.g. tracking user activities), then you can have a Virtual Coach actor initiating the use cases. Give a name to the system other than 'System' and a name to the actor other than 'Actor', such as 'Goalkeeper'.}
+
+\subsection{Analysis Object Model}
+
+\textit{Note: This subsection should contain a UML Class Diagram showing the most important objects, attributes, methods and relations of your application domain including taxonomies using specification inheritance (see \cite{bruegge2004object}). Do not insert objects, attributes or methods of the solution domain.
+\textbf{Important:} Make sure to describe the analysis object model thoroughly in the text so that readers are able to understand the diagram. Also write about the rationale how and why you modeled the concepts like this.}
+
+\subsection{Dynamic Model}
+
+\textit{Note: This subsection should contain dynamic UML diagrams. These can be a UML state diagrams, UML communication diagrams or UML activity diagrams.\textbf{Important:} Make sure to describe the diagram and its rationale in the text. \textbf{Do not use UML sequence diagrams.}}
+
+
+%------- chapter 5 -------
+
+\chapter{System Design}
+
+\textit{Note: The most important goal of this chapter is to show an overview of the system, in particular including subsystems and how these subsystems are mapped to a hardware device.}
+
+\section{Subsystem Decomposition}
+
+\textit{Note: Describe the architecture of your system by decomposing it into subsystems and the services provided by each subsystem. Use UML class diagrams including packages / components for each subsystem.}
+
+\section{Hardware Software Mapping}
+
+\textit{Note: This section describes how the subsystems are mapped onto existing hardware and software components. The description is accompanied by a UML deployment diagram.}
+
+\chapter{Object Design}
+
+\textit{Note: Here goes the core of your project. Describe what algorithms and data structures you used so that your work can be reproduced by someone who did not know about it before. You can organise this chapter into a subsection for each relevant object (e.g. Segmentation Algorithm, Classifier, etc.)}
+
+%------- chapter 6 -------
+
+\chapter{(Experimental) Evaluation}
+
+\textit{Note: If you did an evaluation / case study, describe it here. Add images to give a better feel about how the data was collected.}
+
+\section{Design}
+
+\textit{Note: Describe the design / methodology of the evaluation and why you did it like that. E.g. what kind of evaluation have you done (e.g. how did you chose your users and why? what did you have the users do? How long? How much data did you collect? If you are doing a machine learning, provide a table of the amounts of instances per class collected.}
+
+\section{Results}
+
+\textit{Note: Present the results without interpreting them. If you are working on a machine learning application, provide a table including Accuracy, Precision, Recall for each classifier tested and provide the confusion matrix.}
+
+\section{Discussion}
+
+\textit{Note: Interpret the results presented. The main goal is justify whether your approach would be suitable for solving the problem you addressed in the Introduction.}
+
+\section{Limitations}
+
+\textit{Note: Describe limitations and threats to validity of your evaluation, e.g. possible overfitting, issues in the way how the data was collected that might lead to different behavior in real life (also mention how they could be solved in the future).}
+
+
+%------- chapter 7 -------
+
+
+\section{Conclusion}
+
+\textit{Note: Recap shortly which problem you solved in your thesis and discuss your \textbf{contributions} here.}
+
+\section{Future Work}
+
+\textit{Note: What do you think could give better results?}
+
+
+\appendix
+
+\chapter{e.g. Table}
+
+\textit{Note: If you have large models, additional evaluation data like questionnaires or non summarized results, put them into the appendix.}
+
+
+\clearpage
+
+\listoffigures
+\clearpage
+
+\listoftables
+\clearpage
+
+\bibliography{thesis}
+\bibliographystyle{alpha}
+
+\end{document}
