@@ -1,5 +1,5 @@
-#LyX 2.2 created this file. For more info see http://www.lyx.org/
-\lyxformat 508
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
 \begin_document
 \begin_header
 \save_transient_properties true
@@ -21,6 +21,8 @@
 \font_osf false
 \font_sf_scale 100 100
 \font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
 \graphics default
 \default_output_format default
 \output_sync 0
@@ -50,6 +52,7 @@
 \suppress_date false
 \justification true
 \use_refstyle 0
+\use_minted 0
 \index Index
 \shortcut idx
 \color #008000
@@ -62,7 +65,10 @@
 \tocdepth 3
 \paragraph_separation indent
 \paragraph_indentation default
-\quotes_language english
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
 \papercolumns 1
 \papersides 1
 \paperpagestyle default
@@ -92,9 +98,11 @@ Problem
 \begin_layout Standard
 
 \emph on
-What problem are you addressing? Justify why is it relevant to solve this
- problem (e.g.
- with demographicsal information how many people are affected by it).
+What problem are you addressing? Justify why it is relevant to solve this
+ problem? To whom is this problem relevant.
+ Suggestion: ask your supervisor for a few related research papers and extract
+ a few arguemtns asa bullet points describing the problem.
+ Share those arguments with your supervisor per email.
 \end_layout
 
 \begin_layout Section
@@ -105,7 +113,9 @@ Motivation
 
 \emph on
 What are you doing and if not obvious why does it have the potential to
- solve or help solve the problem mentioned?
+ solve or help solve the problem mentioned? Note: if the problem and motivation
+ sections are only one or two paragraphs long, consider merging them under
+ the Introductin directly (without subsections).
 \end_layout
 
 \begin_layout Section
@@ -115,7 +125,7 @@ Outline
 \begin_layout Standard
 
 \emph on
-Describe the the content of each chapter briefly.
+List the content of each chapter briefly.
 \end_layout
 
 \end_body

@@ -1,5 +1,5 @@
-#LyX 2.2 created this file. For more info see http://www.lyx.org/
-\lyxformat 508
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
 \begin_document
 \begin_header
 \save_transient_properties true
@@ -25,6 +25,8 @@
 \font_osf false
 \font_sf_scale 100 100
 \font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
 \graphics default
 \default_output_format default
 \output_sync 0
@@ -54,6 +56,7 @@
 \suppress_date false
 \justification true
 \use_refstyle 0
+\use_minted 0
 \index Index
 \shortcut idx
 \color #008000
@@ -66,7 +69,10 @@
 \tocdepth 3
 \paragraph_separation indent
 \paragraph_indentation default
-\quotes_language english
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
 \papercolumns 1
 \papersides 1
 \paperpagestyle default
@@ -86,9 +92,11 @@ System Design
 \begin_layout Standard
 
 \emph on
-The most important goal of this chapter is to show an overview of the system,
- in particular including subsystems and how these subsystems are mapped
- to a hardware device
+The goal of this chapter is to show an overview of the system, in particular
+ including subsystems and how these subsystems are mapped to a hardware
+ device.
+ If you investigated different technologies, you can address their tradeoffs
+ in this section (relate them to the non-functional requirements).
 \end_layout
 
 \begin_layout Section
@@ -100,7 +108,8 @@ Subsystem Decomposition
 \emph on
 Describe the architecture of your system by decomposing it into subsystems
  and the services provided by each subsystem.
- Use UML class diagrams including packages / components for each subsystem
+ You can use UML components or subsystems for each subsystem.
+ You should add a short description of what each subsystem / component does.
 \end_layout
 
 \begin_layout Section
@@ -110,9 +119,17 @@ Hardware/Software Mapping
 \begin_layout Standard
 
 \emph on
-This section describes how the subsystems are mapped onto existing hardware
- and software components.
- The description is accompanied by a UML deployment diagram
+This section describes how the subsystems or components are mapped onto
+ existing hardware and software components.
+ The description is accompanied by a UML deployment diagram.
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+Note: you can merge the subsystem decomposition and Hardware Software mapping
+ by using a deployment diagram that uses nodes (cubes) to describe the hardware
+ devices software components contained inside the hardware nodes.
 \end_layout
 
 \end_body

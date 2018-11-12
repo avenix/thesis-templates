@@ -1,5 +1,5 @@
-#LyX 2.2 created this file. For more info see http://www.lyx.org/
-\lyxformat 508
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
 \begin_document
 \begin_header
 \save_transient_properties true
@@ -21,6 +21,8 @@
 \font_osf false
 \font_sf_scale 100 100
 \font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
 \graphics default
 \default_output_format default
 \output_sync 0
@@ -50,6 +52,7 @@
 \suppress_date false
 \justification true
 \use_refstyle 0
+\use_minted 0
 \index Index
 \shortcut idx
 \color #008000
@@ -62,7 +65,10 @@
 \tocdepth 3
 \paragraph_separation indent
 \paragraph_indentation default
-\quotes_language english
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
 \papercolumns 1
 \papersides 1
 \paperpagestyle default
@@ -88,10 +94,16 @@ Requirement Specification
 \begin_layout Standard
 
 \emph on
-Make sure that the whole chapter is independent of the chosen technology
+In this chapter, you describe the concepts, taxonomies and relationships
+ of the application domain.
+ Note: Make sure that the whole chapter is independent of the chosen technology
  and development platform.
- The idea is that you illustrate concepts, taxonomies and relationships
- of the application domain independent of the solution domain!
+ If you are going to develop a system to detect lacrosse goalkeeper training
+ exercises using a peak detection algorithm to detect high energy in the
+ signal, you will want to model the stick, the sensor, how the sensor is
+ attached to the stick, the signal, how the signal looks like when the player
+ performs an exercise, where the peak is located.
+ 
 \end_layout
 
 \begin_layout Section
@@ -115,10 +127,13 @@ Example citation in Lyx:
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Bruegge2004software"
+literal "true"
 
 \end_inset
 
 .
+ You can copy paste this citation, click on the citation and select the
+ paper you want to cite from the list.
 \end_layout
 
 \begin_layout Section
@@ -131,7 +146,6 @@ Visionary Scenarios
 Describe 1-2 visionary scenarios here, i.e.
  a scenario that would perfectly solve your problem, even if it might not
  be realizable.
- use our scenario description template in form of a table.
 \end_layout
 
 \begin_layout Section
@@ -141,35 +155,50 @@ Functional Requirements
 \begin_layout Standard
 
 \emph on
-List and describe all functional requirements of your system.
- Also mention requirements that you are not going to realize.
+List and describe all functional requirements of the ideal system.
+ Note that you might not implement the entire system within your thesis.
+ Still, describe the requirements for that system.
  The short title should be in the form ``verb objective''.
 \end_layout
 
 \begin_layout Enumerate
+[Detection].
+ The system should classify the pig activities including:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Eating
+\end_layout
+
+\begin_layout Enumerate
+Resting
+\end_layout
+
+\begin_layout Enumerate
+Walking
+\end_layout
+
+\begin_layout Enumerate
+Running
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
 
 \series bold
-Category
+[
 \series default
-.
+Name].
  Short Description.
 \end_layout
 
 \begin_layout Enumerate
 
 \series bold
-Category
+[
 \series default
-.
- Short Description.
-\end_layout
-
-\begin_layout Enumerate
-
-\series bold
-Category
-\series default
-.
+Name].
  Short Description.
 \end_layout
 
@@ -185,12 +214,10 @@ List and describe all nonfunctional requirements of your system.
 \end_layout
 
 \begin_layout Enumerate
-
-\series bold
-Category
-\series default
-.
- Short Description.
+[Robustness].
+ The sensor might be prone to bites from pigs.
+ Therefore, the sensor should be water-proff and able to resist high amounts
+ of force being applied to it.
 \end_layout
 
 \begin_layout Enumerate
@@ -245,7 +272,7 @@ This subsection should contain a UML Class Diagram showing the most important
 \end_layout
 
 \begin_layout Section
-Dynamic Model 
+Dynamic Model (optional)
 \end_layout
 
 \begin_layout Standard
@@ -256,8 +283,10 @@ This subsection should contain dynamic UML diagrams.
  diagrams.
  Make sure to describe the diagram and its rationale in the text.
  
-\backslash
-textbf{Do not use UML sequence diagrams.
+\series bold
+Do not use sequence diagrams
+\series default
+.
 \end_layout
 
 \end_body

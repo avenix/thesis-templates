@@ -1,5 +1,5 @@
-#LyX 2.2 created this file. For more info see http://www.lyx.org/
-\lyxformat 508
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
 \begin_document
 \begin_header
 \save_transient_properties true
@@ -25,6 +25,8 @@
 \font_osf false
 \font_sf_scale 100 100
 \font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
 \graphics default
 \default_output_format default
 \output_sync 0
@@ -54,6 +56,7 @@
 \suppress_date false
 \justification true
 \use_refstyle 0
+\use_minted 0
 \index Index
 \shortcut idx
 \color #008000
@@ -66,7 +69,10 @@
 \tocdepth 3
 \paragraph_separation indent
 \paragraph_indentation default
-\quotes_language english
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
 \papercolumns 1
 \papersides 1
 \paperpagestyle default
@@ -87,7 +93,8 @@ Evaluation
 
 \emph on
 If you did an evaluation / case study, describe it here.
- Add images to give a better feel about how the data was collected.
+ Add images to give a better feel about what you actually did (e.g.
+ how you collected the data at the hospital).
 \end_layout
 
 \begin_layout Section
@@ -101,9 +108,10 @@ Describe the design / methodology of the evaluation and why you did it like
  that.
  E.g.
  what kind of evaluation have you done (e.g.
- how did you chose your users and why? what did you have the users do? How
- long? How much data did you collect? If you are doing a machine learning,
- provide a table of the amounts of instances per class collected.
+ how did you chose your users and why? what where your subjects instructed
+ to do? How long did they do it? How much data did you collect? If you used
+ machine learning, be sure to describe your data set (how many instances
+ of each class did you have), ideally with a table.
 \end_layout
 
 \begin_layout Section
@@ -115,8 +123,7 @@ Results
 \emph on
 Present the results without interpreting them.
  If you are working on a machine learning application, provide a table including
- Accuracy, Precision, Recall for each classifier tested and provide the
- confusion matrix.
+ Accuracy, Precision, Recall, F1-Score and the confusion matrix.
 \end_layout
 
 \begin_layout Section
@@ -127,8 +134,8 @@ Discussion
 
 \emph on
 Interpret the results presented.
- The main goal is justify whether your approach would be suitable for solving
- the problem you addressed in the Introduction.
+ The main goal is to justify whether your approach would be suitable for
+ solving the problem you addressed in the Introduction.
 \end_layout
 
 \begin_layout Section
