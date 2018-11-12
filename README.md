@@ -4,7 +4,7 @@ In this git repository you will find a template to write your bachelor’s or Ma
 
 - Latex. This is the conventional latex template.
 
-- Lyx. Lyx is an WYSIWYG (What You See Is What You Get) graphical interface on top of latex. It compiles your project using latex without you having to know the latex syntax. However it still allows you to write latex code if you prefer. See: [Lyx Website](https://www.lyx.org/). Note: you can open the invididual files, but to compile the entire thesis you should open the *__Thesis* file.
+- Lyx. Lyx is an WYSIWYG (What You See Is What You Get) graphical interface on top of latex. It compiles your project using latex without you having to know the latex syntax. However it still allows you to write latex code if you prefer. See: [Lyx Website](https://www.lyx.org/). *Note: you can open the invididual files, but to compile the entire thesis you should open the "__Thesis.lyx" file.*
 
 # Thesis Structure
 
